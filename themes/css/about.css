@@ -1,0 +1,11 @@
+header {
+    height: 40vh;
+    background: url('../img/header-piano.jpg');
+    background-size: cover;
+}
+
+.about-header-wrapper h1 {
+	text-align: center;
+	color: #fff;
+	font-size: 120px;
+}

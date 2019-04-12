@@ -1,0 +1,111 @@
+
+
+/*
+HOME
+*/
+header {
+    height: 90vh;
+    background: url('../img/header-piano.jpg');
+    background-size: cover;
+}
+
+.header-content-wrapper {
+    top: 15%;
+    position: relative;
+    text-align: center;
+}
+
+.header-content-wrapper h1 {
+    color: #fff;
+    font-size: 160px;
+    font-weight: 100;
+}
+
+span.gold-underline {
+	border-bottom: 1px solid #DAA520;
+}
+
+.header-content-wrapper p {
+    color: #fff;
+    font-size: 80px;
+    font-weight: 100;
+}
+
+.why-piano-section {
+    padding: 100px 0;
+}
+
+.why-piano-section h2, .piano-perks-section h2 {
+    color: #525252;
+}
+
+.why-piano-section p {
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+.piano-perks-section {
+	padding: 100px 0;
+}
+
+.more-info-section {
+	background: url('../img/piano-hands.png') no-repeat;
+	min-height: 600px;  
+	background-size: cover;
+	display: table;
+    width: 100%;
+	position: relative;
+	margin-top: 100px;
+}
+
+.more-info-container {
+	display: table-cell;
+    vertical-align: middle;
+}
+
+.more-info-section button {
+	border-radius: 0;
+}
+
+.more-info-section button:hover {
+	border: 1px solid #DAA520;
+}
+
+.more-info-section button a {
+	color: #fff;
+}
+
+.more-info-section button a:hover, .more-info-section button:hover a {
+	color: #000;
+	text-decoration: none;
+}
+
+.more-info-section h3 {
+	color: #fff;
+	font-weight: 300;
+}
+
+.more-info-section p {
+	color: #fff;
+}
+
+.more-info-content,
+.see-prices-content {
+	text-align: center;
+	width: 75%;
+	margin: auto; 
+}
+
+.more-info-content p,
+.see-prices-content p {
+	font-size: 18px;
+}
+
+.contact-button {
+	position: relative;
+	top: 100px;
+}
+
+.contact-button button {
+	padding: 10px 50px; 
+}

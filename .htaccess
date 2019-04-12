@@ -1,0 +1,24 @@
+RewriteEngine On
+RewriteBase /
+
+# The following line has to be placed in the httpd config
+#RewriteMap  lc int:tolower
+
+#RewriteCond %{REQUEST_URI} [A-Z]
+#RewriteRule (.*) ${lc:$1} [R=301,L]
+
+# Force https
+#RewriteCond %{HTTPS} off [OR]
+RewriteCond %{HTTP_HOST} !^jackcooperpiano\.local$
+RewriteRule ^(.*)$ "http\:\/\/jackcooperpiano\.local\/$1" [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^system.*
+RewriteRule ^(.*)$ index.php?/$1 [L]
+
+RewriteCond %{REQUEST_URI} ^application.*
+RewriteRule ^(.*)$ index.php?/$1 [L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php?/$1 [L]
+
